@@ -1,0 +1,350 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 19041.985; Version 2004; 64bit' Language: 'pt' Physical Memory: 16326 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity\2020.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/UnityProjects/Pong Online
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65519
+Successfully changed project path to: D:/UnityProjects/Pong Online
+D:/UnityProjects/Pong Online
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 25.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path D:/Unity/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Pong Online/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
+    Vendor:   
+    VRAM:     8031 MB
+    Driver:   27.21.14.6663
+Initialize mono
+Mono path[0] = 'D:/Unity/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001335 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 21.03 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.265 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000771 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.844 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.9 MB.
+System memory in use after: 56.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1558.
+Total: 1.789300 ms (FindLiveObjects: 0.141400 ms CreateObjectMapping: 0.048700 ms MarkObjects: 1.518000 ms  DeleteObjects: 0.080100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad0351b26dcc6ab432934b36c5fe3e0') in 0.033019 seconds
+  Import took 0.035200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 996.703345 seconds.
+  path: Assets/atlas_pong.png
+  artifactKey: Guid(1928327c24e305246ac63958d7ea5350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/atlas_pong.png using Guid(1928327c24e305246ac63958d7ea5350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860f80cf423966417a2168f732ae59cd') in 0.141315 seconds
+  Import took 0.143752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.212803 seconds.
+  path: Assets/escudo_verde_pong.png
+  artifactKey: Guid(eedeb83c4d16fa342af73750f2c27fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/escudo_verde_pong.png using Guid(eedeb83c4d16fa342af73750f2c27fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8252fed76d595e3e3896e09d35c97e81') in 0.011376 seconds
+  Import took 0.013135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001635 seconds.
+  path: Assets/escudo_verde_pong.png
+  artifactKey: Guid(eedeb83c4d16fa342af73750f2c27fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/escudo_verde_pong.png using Guid(eedeb83c4d16fa342af73750f2c27fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8252fed76d595e3e3896e09d35c97e81') in 0.009296 seconds
+  Import took 0.011117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.789655 seconds.
+  path: Assets/fundo_2_pong.png
+  artifactKey: Guid(3202baa94e837a5478a02b96e32ee006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fundo_2_pong.png using Guid(3202baa94e837a5478a02b96e32ee006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f933dc2ccc6be29b7c9cdf85bf8c440') in 0.010725 seconds
+  Import took 0.012705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001012 seconds.
+  path: Assets/fundo_2_pong.png
+  artifactKey: Guid(3202baa94e837a5478a02b96e32ee006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fundo_2_pong.png using Guid(3202baa94e837a5478a02b96e32ee006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f933dc2ccc6be29b7c9cdf85bf8c440') in 0.009551 seconds
+  Import took 0.011415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.456057 seconds.
+  path: Assets/escudo_vermelho_pong.png
+  artifactKey: Guid(15c582cb6bbc639458f4a1113bf7657b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/escudo_vermelho_pong.png using Guid(15c582cb6bbc639458f4a1113bf7657b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6e088daa297e8dadccc3012b1eeb02') in 0.021947 seconds
+  Import took 0.024303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.991968 seconds.
+  path: Assets/fundo_pong.png
+  artifactKey: Guid(4dcac248cf4c1084cacce57058f209cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fundo_pong.png using Guid(4dcac248cf4c1084cacce57058f209cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b59120ac20722871e851148276ecfcac') in 0.010749 seconds
+  Import took 0.012852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002943 seconds.
+  path: Assets/fundo_pong.png
+  artifactKey: Guid(4dcac248cf4c1084cacce57058f209cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fundo_pong.png using Guid(4dcac248cf4c1084cacce57058f209cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b59120ac20722871e851148276ecfcac') in 0.006216 seconds
+  Import took 0.007994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.925983 seconds.
+  path: Assets/escudo_verde_pong.png
+  artifactKey: Guid(eedeb83c4d16fa342af73750f2c27fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/escudo_verde_pong.png using Guid(eedeb83c4d16fa342af73750f2c27fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c07a9960246d51012c4d3322d0d26e5a') in 0.046072 seconds
+  Import took 0.048111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 158.068644 seconds.
+  path: Assets/escudo_vermelho_pong.png
+  artifactKey: Guid(15c582cb6bbc639458f4a1113bf7657b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/escudo_vermelho_pong.png using Guid(15c582cb6bbc639458f4a1113bf7657b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b8b3665718a9876e5d228d7e7a08ce0') in 0.011998 seconds
+  Import took 0.014202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 303.687803 seconds.
+  path: Assets/atlas_pong.png
+  artifactKey: Guid(1928327c24e305246ac63958d7ea5350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/atlas_pong.png using Guid(1928327c24e305246ac63958d7ea5350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba8bae43c49c058af82b0a96e401c0d') in 0.037744 seconds
+  Import took 0.039961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/fundo_2_pong.png
+  artifactKey: Guid(3202baa94e837a5478a02b96e32ee006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fundo_2_pong.png using Guid(3202baa94e837a5478a02b96e32ee006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ccc3ba69934e074bb2f3dfee3f61ce4') in 0.014605 seconds
+  Import took 0.016701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/fundo_pong.png
+  artifactKey: Guid(4dcac248cf4c1084cacce57058f209cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fundo_pong.png using Guid(4dcac248cf4c1084cacce57058f209cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f1de206855ea13d28519cc72663b33') in 0.011675 seconds
+  Import took 0.013424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 410.300168 seconds.
+  path: Assets/Scripts/Game
+  artifactKey: Guid(76529e52ee1215646b98861cef17f036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game using Guid(76529e52ee1215646b98861cef17f036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f715543527d9a7c5445263264e8795ae') in 0.006620 seconds
+  Import took 0.009380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.276864 seconds.
+  path: Assets/Scripts/Game/PlayerMovement.cs
+  artifactKey: Guid(e934b9af68f08964ba88e98fa98fb197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game/PlayerMovement.cs using Guid(e934b9af68f08964ba88e98fa98fb197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31c77b46edf2e8a20a3d1348f4f3c19') in 0.023942 seconds
+  Import took 0.025748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.155133 seconds.
+  path: Assets/Scripts/Game/PlayerMovement.cs
+  artifactKey: Guid(e934b9af68f08964ba88e98fa98fb197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game/PlayerMovement.cs using Guid(e934b9af68f08964ba88e98fa98fb197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31c77b46edf2e8a20a3d1348f4f3c19') in 0.002258 seconds
+  Import took 0.004212 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000614 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.809 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1575.
+Total: 1.642000 ms (FindLiveObjects: 0.126900 ms CreateObjectMapping: 0.032600 ms MarkObjects: 1.429100 ms  DeleteObjects: 0.052700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000637 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1578.
+Total: 1.733300 ms (FindLiveObjects: 0.128200 ms CreateObjectMapping: 0.034200 ms MarkObjects: 1.522500 ms  DeleteObjects: 0.047000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000595 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.835 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1581.
+Total: 1.966500 ms (FindLiveObjects: 0.152500 ms CreateObjectMapping: 0.064800 ms MarkObjects: 1.697200 ms  DeleteObjects: 0.050900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 394.644753 seconds.
+  path: Assets/Scripts/Game/Ball.cs
+  artifactKey: Guid(97d0fa117b80732459ead87fec581e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game/Ball.cs using Guid(97d0fa117b80732459ead87fec581e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da27c1ea9a022b68df618470191c5552') in 0.022686 seconds
+  Import took 0.024622 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000652 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.794 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1113 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1585.
+Total: 1.535600 ms (FindLiveObjects: 0.123900 ms CreateObjectMapping: 0.034300 ms MarkObjects: 1.330700 ms  DeleteObjects: 0.045800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000615 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.742 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1113 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.1 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1588.
+Total: 3.577600 ms (FindLiveObjects: 0.283500 ms CreateObjectMapping: 0.090400 ms MarkObjects: 3.055000 ms  DeleteObjects: 0.145600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 170.108900 seconds.
+  path: Assets/Ball Physics.physicMaterial
+  artifactKey: Guid(352454c8a7f2f704ab02cb8af463e8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Physics.physicMaterial using Guid(352454c8a7f2f704ab02cb8af463e8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea46e0c0d401a4721812c076a66ca1c') in 0.019646 seconds
+  Import took 0.022192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.767821 seconds.
+  path: Assets/New Physic Material.physicMaterial
+  artifactKey: Guid(f4a97f07a033c324992814f6eaa3f495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Physic Material.physicMaterial using Guid(f4a97f07a033c324992814f6eaa3f495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c741fcb92e18286ccad687e024d843ae') in 0.006616 seconds
+  Import took 0.008590 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
