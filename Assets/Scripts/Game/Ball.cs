@@ -31,7 +31,6 @@ public class Ball : MonoBehaviour
         rb.velocity = new Vector2(speed * x, speed * y);
     }
 
-    // determine the response to a collision
     private void HandleRacketCollision(Collision2D col, int bounceDirectionX)
     {
         // keep track of how many times the ball hits a racket

@@ -1,14 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ServerApplication : MonoBehaviour
 {
-    public int port = 3000;
+    public int port = 3001;
 
     UdpConnection MyConnection;
 
-    public Transform RemotePlayer;
+    public PlayerMovement player;
+
+    public Transform player1;
+    public Transform player2;
+    public Transform ball;
 
     // Start is called before the first frame update
     void Start()
@@ -21,22 +23,16 @@ public class ServerApplication : MonoBehaviour
 
     void OnPackageReceived(string message, string address, int port)
     {
-        Debug.Log(message + " - Address: " + address + ":" + port.ToString());
-
-        message = message.Replace("Position=(", "");
-        message = message.Replace(")", "");
-        message = message.Replace(" ", "");
+         int move = int.Parse(message);
+        player.Movement = move;
 
         Debug.Log(message);
 
-        string [] values = message.Split(',');
-
-        float x = float.Parse(values[0]);
-        float y = float.Parse(values[1]);
-        float z = float.Parse(values[2]);
-
-        RemotePlayer.position = new Vector3(x, y, z);
-
-        MyConnection.SendPackage("Recebi seu pacote", address, port);
+        System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+        string pos = "Position=" + player1.position.ToString("0.00", culture);
+        pos += "Position=" + player2.position.ToString("0.00", culture);
+        pos += "Position=" + ball.position.ToString("0.00", culture);
+        
+        MyConnection.SendPackage(pos, address, port);
     }
 }

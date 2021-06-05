@@ -77,7 +77,7 @@ public class UdpConnection : MonoBehaviour
         UdpClient socket = result.AsyncState as UdpClient;
         IPEndPoint source = new IPEndPoint(0, 0);
 
-        byte [] buffer = socket.EndReceive(result, ref source);
+        byte[] buffer = socket.EndReceive(result, ref source);
 
         if (buffer.Length > 0)
         {
