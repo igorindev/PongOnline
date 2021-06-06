@@ -63,8 +63,10 @@ public class ClientApplication : MonoBehaviour
 
         red.Points = int.Parse(values[10], culture);
         red.UpdateValue();
+
         green.Points = int.Parse(values[11], culture);
         green.UpdateValue();
+
         current = StartCoroutine(Interpolate(player1Pos, player2Pos, ball, time));
     }
 

@@ -47,9 +47,9 @@ public class ServerApplication : MonoBehaviour
                 string message = "Position=" + player1.position.ToString("0.00", culture);
                 message += ",Position=" + player2.position.ToString("0.00", culture);
                 message += ",Position=" + ball.position.ToString("0.00", culture);
-                message += "," + Time.time;
-                message += "," + redPoints;
-                message += "," + greenPoints;
+                message += "," + Time.time.ToString("0.00", culture);
+                message += "," + redPoints.Points;
+                message += "," + greenPoints.Points;
 
                 MyConnection.SendPackage(message, connectedAddress, connectedPort);
             }
