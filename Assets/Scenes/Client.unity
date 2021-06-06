@@ -1363,7 +1363,10 @@ MonoBehaviour:
   port: 3000
   connectedAddress: 
   connectedPort: 0
-  player: {fileID: 545891628}
+  secondPlayer: {fileID: 0}
+  ballMain: {fileID: 0}
+  redPoints: {fileID: 0}
+  greenPoints: {fileID: 0}
   player1: {fileID: 196032540}
   player2: {fileID: 545891625}
   ball: {fileID: 577435218}
@@ -1729,6 +1732,8 @@ MonoBehaviour:
   - {fileID: 196032540}
   - {fileID: 545891625}
   - {fileID: 577435218}
+  red: {fileID: 1046633248}
+  green: {fileID: 1987168080}
 --- !u!1 &1987168077
 GameObject:
   m_ObjectHideFlags: 0
