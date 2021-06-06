@@ -1,38 +1,60 @@
+using System.Collections;
 using UnityEngine;
 
 public class ServerApplication : MonoBehaviour
 {
     public int port = 3001;
-
+    public string connectedAddress = "";
+    public int connectedPort = 0;
     UdpConnection MyConnection;
 
-    public PlayerMovement player;
+    public PlayerMovement secondPlayer;
+    public Ball ballMain;
+
+    public Goal redPoints;
+    public Goal greenPoints;
 
     public Transform player1;
     public Transform player2;
     public Transform ball;
 
-    // Start is called before the first frame update
     void Start()
     {
         MyConnection = transform.GetChild(0).GetComponent<UdpConnection>();
         MyConnection.CreateSocket(port);
 
         MyConnection.OnPackageReceived += OnPackageReceived;
+
+        StartCoroutine(Up());
     }
 
     void OnPackageReceived(string message, string address, int port)
     {
-         int move = int.Parse(message);
-        player.Movement = move;
+        connectedPort = port;
+        connectedAddress = address;
+        int.TryParse(message, out int move);
+        secondPlayer.Movement = move;
+    }
 
-        Debug.Log(message);
+    IEnumerator Up()
+    {
+        while (true)
+        {
+            if (connectedAddress != "")
+            {
+                ballMain.enabled = true;
+                System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+                string message = "Position=" + player1.position.ToString("0.00", culture);
+                message += ",Position=" + player2.position.ToString("0.00", culture);
+                message += ",Position=" + ball.position.ToString("0.00", culture);
+                message += "," + Time.time;
+                message += "," + redPoints;
+                message += "," + greenPoints;
 
-        System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
-        string pos = "Position=" + player1.position.ToString("0.00", culture);
-        pos += "Position=" + player2.position.ToString("0.00", culture);
-        pos += "Position=" + ball.position.ToString("0.00", culture);
-        
-        MyConnection.SendPackage(pos, address, port);
+                MyConnection.SendPackage(message, connectedAddress, connectedPort);
+            }
+
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }

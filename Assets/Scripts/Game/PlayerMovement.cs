@@ -22,8 +22,8 @@ public class PlayerMovement : MonoBehaviour
         if (server)
         {
             Movement = Input.GetAxisRaw(inputPlayer);
-
-            rb.velocity = new Vector2(rb.velocity.x, Movement * moveSpeed);
         }
+
+        rb.velocity = new Vector2(rb.velocity.x, Movement * moveSpeed);
     }
 }
