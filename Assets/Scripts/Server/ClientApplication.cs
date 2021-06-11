@@ -18,10 +18,15 @@ public class ClientApplication : MonoBehaviour
     [SerializeField] Goal red;
     [SerializeField] Goal green;
 
+    void Awake()
+    {
+        Debug.Log(PlayerPrefs.GetString("ip"));
+        ServerAddress = PlayerPrefs.GetString("ip");
+        ServerPort = int.Parse(PlayerPrefs.GetString("port"));
+    }
+
     void Start()
     {
-        ServerAddress = PlayerPrefs.GetString("ip");
-
         MyConnection = transform.GetChild(0).GetComponent<UdpConnection>();
         MyConnection.CreateSocket(UnityEngine.Random.Range(3000, 5000));
 
@@ -86,27 +91,26 @@ public class ClientApplication : MonoBehaviour
 
     IEnumerator Interpolate(Vector3 player1, Vector3 player2, Vector3 ball, float time)
     {
-        time -= lastPackTime;
-
+        float duration = time - lastPackTime;
+        lastPackTime = time;
+        Debug.LogWarning(time + "/" + lastPackTime);
         Vector3 player1Current = positions[0].position;
         Vector3 player2Current = positions[1].position;
         Vector3 ballCurrent = positions[2].position;
 
         float count = 0;
-        while (count < 1)
+        while (count < duration)
         {
-            count += Time.deltaTime * time;
-
-            positions[0].position = Vector3.Lerp(player1Current, player1, count);
-            positions[1].position = Vector3.Lerp(player2Current, player2, count);
-            positions[2].position = Vector3.Lerp(ballCurrent, ball, count);
+            count += Time.deltaTime;
+            Debug.Log(count);
+            positions[0].position = Vector3.Lerp(player1Current, player1, count/duration);
+            positions[1].position = Vector3.Lerp(player2Current, player2, count/duration);
+            positions[2].position = Vector3.Lerp(ballCurrent, ball, count / duration);
 
             yield return null;
         }
         positions[0].position = player1;
         positions[1].position = player2;
         positions[2].position = ball;
-
-        lastPackTime = time;
     }
 }

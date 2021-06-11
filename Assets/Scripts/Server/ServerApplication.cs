@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Globalization;
 using UnityEngine;
 
 public class ServerApplication : MonoBehaviour
@@ -18,6 +19,14 @@ public class ServerApplication : MonoBehaviour
     public Transform player2;
     public Transform ball;
 
+    public float timer;
+
+    void Awake()
+    {
+        timer = 0;
+        port = int.Parse(PlayerPrefs.GetString("port"));
+    }
+
     void Start()
     {
         MyConnection = transform.GetChild(0).GetComponent<UdpConnection>();
@@ -36,6 +45,14 @@ public class ServerApplication : MonoBehaviour
         secondPlayer.Movement = move;
     }
 
+    private void Update()
+    {
+        if (connectedAddress != "")
+        {
+            timer += Time.deltaTime;
+        }
+    }
+
     IEnumerator Up()
     {
         while (true)
@@ -47,14 +64,14 @@ public class ServerApplication : MonoBehaviour
                 string message = "Position=" + player1.position.ToString("0.00", culture);
                 message += ",Position=" + player2.position.ToString("0.00", culture);
                 message += ",Position=" + ball.position.ToString("0.00", culture);
-                message += "," + Time.time.ToString("0.00", culture);
+                message += "," + timer.ToString("0.00", culture);
                 message += "," + redPoints.Points;
                 message += "," + greenPoints.Points;
 
                 MyConnection.SendPackage(message, connectedAddress, connectedPort);
             }
 
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.07f);
         }
     }
 }
