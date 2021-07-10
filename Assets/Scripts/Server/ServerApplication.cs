@@ -71,7 +71,7 @@ public class ServerApplication : MonoBehaviour
                 MyConnection.SendPackage(message, connectedAddress, connectedPort);
             }
 
-            yield return new WaitForSeconds(0.07f);
+            yield return null;
         }
     }
 }
